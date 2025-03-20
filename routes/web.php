@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/services', function () {
+Route::get('/our-services', function () {
     return view('service');
 });
 
@@ -33,3 +34,9 @@ Route::get('/contact-us', function () {
     return view('contact');
 });
 
+Route::post("/newsletter",[HomeController::class, 'newsletterSave'])->name("newsletter");
+Route::post("/contact",[HomeController::class, 'contactSave'])->name("contact");
+
+Route::fallback(function () {
+    return redirect('/');
+});

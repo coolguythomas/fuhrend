@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('contact')
+    current-menu-item
+@endsection
 @section('content')
     <!-- Breadcrumbs Start -->
     <div class="rs-breadcrumbs img6">
@@ -7,11 +10,11 @@
                 <h1 class="page-title">
                     Contact Us
                 </h1>
-                <span class="sub-text">Excepteur sint occaecat cupidatat non proident, sunt in coulpa qui official<br>
-                    modeserunt mollit anim id est 20 years experience.</span>
+                <span class="sub-text">Building Nigeria's future with quality craftsmanship, <br> innovative solutions, and trusted
+                    partnerships in construction.</span>
                 <ul class="breadcrumbs-area">
-                    <li title="Go to konstruk">
-                        <a class="active" href="index.html">Home</a>
+                    <li>
+                        <a class="active" href="/">Home</a>
                     </li>
                     <li>Contact Us</li>
                 </ul>
@@ -25,7 +28,7 @@
         <div class="row no-gutters">
             <div class="col-lg-4">
                 <div class="contact-map">
-                    <iframe src="https://maps.google.com/maps?q=rstheme&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.186407543167!2d4.612270874494065!3d8.48124819732359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10364ce643e26cc9%3A0xe47a663ebce70e0d!2sTanke%20Rd%2C%20Akanbi-1v%20240102%2C%20Kwara%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1742374531091!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -35,27 +38,28 @@
                             <h2 class="title title4 ser-style4">Get in touch</h2>
                         </div>
                         <div id="form-messages"></div>
-                        <form id="contact-form" method="post" action="mailer.php">
+                        <form method="post" action="{{ route("contact") }}">
+                            @csrf
                             <fieldset>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                        <input class="from-control" type="text" id="name" name="name"
-                                            placeholder="Name" required="">
+                                        <input class="from-control" name="name" type="text"
+                                            placeholder="Your Full-Name" required="">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                        <input class="from-control" type="text" id="email" name="email"
-                                            placeholder="E-Mail" required="">
+                                        <input class="from-control" name="email" type="text"
+                                            placeholder="Your E-Mail Address" required="">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                        <input class="from-control" type="text" id="phone" name="phone"
-                                            placeholder="Phone Number" required="">
+                                        <input class="from-control" name="phone" type="text"
+                                            placeholder="Your Phone Number" required="">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                        <input class="from-control" type="text" id="website" name="website"
-                                            placeholder="Your Website" required="">
+                                        <input class="from-control" name="subject" type="text"
+                                            placeholder="Your Subject" required="">
                                     </div>
                                     <div class="col-lg-12 mb-30">
-                                        <textarea class="from-control" id="message" name="message" placeholder="Your Message Here" required=""></textarea>
+                                        <textarea class="from-control" name="message" placeholder="Your Message Here" required=""></textarea>
                                     </div>
                                 </div>
                                 <div class="btn-part">
@@ -77,35 +81,35 @@
                     <div class="col-lg-4 col-md-6 md-mb-30">
                         <div class="contact-box">
                             <div class="contact-icon">
-                                <img src="images/1.png" alt="images">
+                                <img src="{{ asset("assets/images/map-pin-line.svg") }}" alt="images">
                             </div>
                             <div class="content-text">
                                 <h4 class="title"><a href="#">Office address</a></h4>
-                                <p class="services-txt"> Ta-134/A, Gulshan Badda<br> Link Rd, Dhaka </p>
+                                <p class="services-txt"> {{ env("SITE_ADDRESS") }} </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 sm-mb-30">
                         <div class="contact-box">
                             <div class="contact-icon">
-                                <img src="images/2.png" alt="images">
+                                <img src="{{ asset("assets/images/mail-send-fill.svg") }}" alt="images">
                             </div>
                             <div class="content-text">
                                 <h4 class="title"><a href="#">Email us</a></h4>
-                                <span><a href="mailto:support@devsdesign.net">support@devsdesign.net</a></span><br>
-                                <span><a href="mailto:info@codesless.com">info@codesless.com</a></span>
+                                {{-- <span><a href="mailto:support@devsdesign.net">support@devsdesign.net</a></span><br> --}}
+                                <span><a href="mailto:{{ env("SITE_EMAIL") }}">{{ env("SITE_EMAIL") }}</a></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="contact-box">
                             <div class="contact-icon">
-                                <img src="images/3.png" alt="images">
+                                <img src="{{ asset("assets/images/phone-fill.svg") }}" alt="images">
                             </div>
                             <div class="content-text">
                                 <h4 class="title"><a href="#">Call us</a></h4>
-                                <span><a href="tel:(+088)589-8745">(+088)589-8745</a></span><br>
-                                <span> <a href="tel:(+088)222-9999">(+088)222-9999</a></span>
+                                <span><a href="tel:{{ env("SITE_PHONE1") }}">{{ env("SITE_PHONE1") }}</a></span><br>
+                                <span> <a href="tel:{{ env("SITE_PHONE2") }}">{{ env("SITE_PHONE2") }}</a></span>
                             </div>
                         </div>
                     </div>
@@ -117,61 +121,6 @@
     <!-- Contact Section End -->
 
     <!-- Partner Start -->
-    <div class="rs-partner partner-main-home partner-modify9">
-        <div class="container">
-            <div class="partner-content-widget">
-                <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="30"
-                    data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
-                    data-dots="false" data-nav="false" data-nav-speed="false" data-md-device="5"
-                    data-md-device-nav="false" data-md-device-dots="false" data-center-mode="false"
-                    data-ipad-device2="3" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
-                    data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false"
-                    data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false">
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/1_1.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/1_1.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/2_1.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/2_1.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/3_1.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/3_1.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/4.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/4.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/5.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/5.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/6.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/6.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/7.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/7.png" title="" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('includes.partner')
     <!-- Partner End -->
 @endsection

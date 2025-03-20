@@ -1,16 +1,4 @@
 @charset "utf-8";
-
-/**
-*
-* -----------------------------------------------------------------------------
-*
-* Template : Konstruk - Construction & Building HTML Template
-* Author : devsdesign
-* Author URI : http://www.devsdesign.com/ 
-*
-* -----------------------------------------------------------------------------
-*
-**/
 @media only screen and (max-width: 1880px) {
     .rs-slider.rs-slider-style2.rs-slider-style5 #nivoSlider img:not(.sl-icons),
     .rs-slider.rs-slider-style2 #nivoSlider img:not(.sl-icons, .sl-icons1, .sl-icons2){
@@ -84,11 +72,11 @@
     .container.custom {
         max-width: 1190px;
         width: 100%;
-    } 
+    }
     .container.custom2 {
         max-width: 1275px;
         width: 100%;
-    } 
+    }
     .container.custom3 {
         max-width: 1320px;
         width: 100%;
@@ -100,17 +88,17 @@
     .container.custom5 {
         max-width: 1300px;
         width: 100%;
-    } 
+    }
     .container.custom6 {
         max-width: 900px;
         width: 100%;
-    } 
+    }
     .container.custom7 {
         max-width: 800px;
         width: 100%;
     }
 }
-@media only screen and (max-width: 1366px) { 
+@media only screen and (max-width: 1366px) {
     .container-fluid3 {
         padding-left: 30px;
         padding-right: 30px;
@@ -244,7 +232,7 @@
     .rs-project.project-style4.orange-modify3 .slick-arrow.slick-next {
         right: 15%;
         top: -13%;
-    }    
+    }
     .rs-about.about-style3 .image-wrap {
         margin: unset;
     }
@@ -269,12 +257,12 @@
 @media only screen and (max-width: 1199px) {
     .lg-pl-pr-15,
     .lg-col-padding > [class*="col-"] {
-        padding-right: 15px !important; 
+        padding-right: 15px !important;
         padding-left: 15px !important;
     }
     .xl-mb-40{
         margin-bottom: 40px !important;
-    } 
+    }
     .xl-mb-30{
         margin-bottom: 30px !important;
     }
@@ -659,7 +647,7 @@
     }
     .rs-counter.counter-style2 .rs-counter-list .counter-text .counter-number .rs-count {
         font-size: 44px;
-        line-height: 53px;        
+        line-height: 53px;
     }
     .rs-counter.counter-style2 .rs-counter-list .counter-icon {
         width: 65px;
@@ -691,7 +679,7 @@
 }
 
 @media screen and (min-width: 992px){
-    .nav-menu .rs-mega-menu > a:after, 
+    .nav-menu .rs-mega-menu > a:after,
     .nav-menu > .menu-item-has-children > a:after {
         content: "\f107";
         font-family: FontAwesome;
@@ -704,7 +692,7 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    .sticky{ 
+    .sticky{
         background: #fff !important;
         position: fixed !important;
         top: 0px;
@@ -756,7 +744,7 @@
     }
     .md-left{
         text-align: left !important;
-    }  
+    }
     .md-text-center{
         text-align: center !important;
     }
@@ -937,7 +925,7 @@
     .rs-contact.contact-style1 .contact-map iframe {
         height: 400px;
     }
-    .rs-slider.slider-style2 .slider .slider-item.slide-bg2, 
+    .rs-slider.slider-style2 .slider .slider-item.slide-bg2,
     .rs-slider.slider-style2 .slider .slider-item {
         background-position-x: 80%;
     }
@@ -1265,7 +1253,7 @@
     .rs-about .about-img.home3-full img{
         width: 100%;
     }
-    .rs-slider.rs-slider-style2.rs-slider-style5 #nivoSlider img:not(.sl-icons), 
+    .rs-slider.rs-slider-style2.rs-slider-style5 #nivoSlider img:not(.sl-icons),
     .rs-slider.rs-slider-style2 #nivoSlider img:not(.sl-icons, .sl-icons1, .sl-icons2) {
         height: 715px !important;
         width: auto !important;
@@ -1430,7 +1418,7 @@
     }
     .sm-left{
         text-align: left !important;
-    } 
+    }
     .sec-title .sub-text {
         font-size: 14px;
     }
@@ -1834,7 +1822,7 @@
     .rs-slider.rs-slider-style2.rs-slider-style10 .container .content-part .sl-desc {
         font-size: 17px;
     }
-    .rs-counter.counter-style4 .rs-counter-list .count-text .count-number .prefix, 
+    .rs-counter.counter-style4 .rs-counter-list .count-text .count-number .prefix,
     .rs-counter.counter-style4 .rs-counter-list .count-text .count-number .rs-count {
         font-size: 40px;
     }
@@ -2167,7 +2155,7 @@
         height: 650px !important;
         width: auto !important;
     }
-    .rs-slider.rs-slider-style2.rs-slider-style5 #nivoSlider img:not(.sl-icons), 
+    .rs-slider.rs-slider-style2.rs-slider-style5 #nivoSlider img:not(.sl-icons),
     .rs-slider.rs-slider-style2 #nivoSlider img:not(.sl-icons, .sl-icons1, .sl-icons2) {
         height: 650px !important;
         width: auto !important;
@@ -2293,7 +2281,7 @@
     }
 }
 @media only screen and (max-width: 480px){
-    .rs-testimonial.testimonial-style9.testimonial-modify6 .slider .testi-wrap .testi-item .testi-content .testi-information .testi-name, 
+    .rs-testimonial.testimonial-style9.testimonial-modify6 .slider .testi-wrap .testi-item .testi-content .testi-information .testi-name,
     .rs-testimonial.testimonial-style9.testimonial-modify6 .slider .testi-wrap .testi-item .item-content .desc {
         font-size: 16px;
         line-height: 26px;
@@ -2487,7 +2475,7 @@
     .rs-slider.slider-style1 .slider .slider-item .slider-inner {
         padding: 100px 0 100px;
     }
-    .rs-choose.choose-style1 .video-item, 
+    .rs-choose.choose-style1 .video-item,
     .rs-faq.faq-style1 .faq-images {
         padding: 180px 15px 180px;
     }
@@ -2509,12 +2497,12 @@
         font-size: 15px;
         line-height: 27px;
     }
-    .rs-project.project-style5 .project-item .project-content .title, 
+    .rs-project.project-style5 .project-item .project-content .title,
     .rs-services.services-style10 .services-item .services-content .title {
         font-size: 18px;
         line-height: 28px;
     }
-    .rs-counter.counter-style4 .rs-counter-list .count-text .count-number .prefix, 
+    .rs-counter.counter-style4 .rs-counter-list .count-text .count-number .prefix,
     .rs-counter.counter-style4 .rs-counter-list .count-text .count-number .rs-count {
         font-size: 30px;
     }
@@ -2888,7 +2876,7 @@
         padding: 35px 20px 30px 30px;
     }
     .rs-project.project-style2,
-    .rs-contact.contact-style1, 
+    .rs-contact.contact-style1,
     .rs-faq.faq-style1 {
         padding: 80px 15px 80px 15px;
     }
@@ -2963,7 +2951,7 @@
         height: 550px !important;
         width: auto !important;
     }
-    .rs-slider.rs-slider-style2.rs-slider-style5 #nivoSlider img:not(.sl-icons), 
+    .rs-slider.rs-slider-style2.rs-slider-style5 #nivoSlider img:not(.sl-icons),
     .rs-slider.rs-slider-style2 #nivoSlider img:not(.sl-icons, .sl-icons1, .sl-icons2) {
         height: 515px !important;
         width: auto !important;
