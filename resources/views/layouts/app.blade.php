@@ -4,13 +4,12 @@
 <head>
     <!-- meta tag -->
     <meta charset="utf-8">
-    <title> Construction 2 - Konstruk - Construction & Building HTML Template</title>
+    <title>{{ config("app.name") }} - Constracting Nigeria Limited</title>
     <meta name="description" content="">
     <!-- responsive tag -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon -->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset("assets/logo.png") }}">
     <!-- Bootstrap v4.4.1 css -->
     <link rel="stylesheet" type="text/css" href="{{ asset("assets/css/bootstrap.min.css") }}">
@@ -39,7 +38,9 @@
     <!-- This stylesheet dynamically changed from style.less -->
     <!-- responsive css -->
     <link rel="stylesheet" type="text/css" href="{{ asset("assets/css/responsive.css") }}">
-
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    @yield("style")
 </head>
 
 <body class="defult-home">
@@ -51,7 +52,7 @@
         <div id="loader" class="loader">
             <div class="loader-container">
                 <div class="loader-icon"><img src="{{ asset("assets/logo.png") }}"
-                        alt="Konstruk - Construction & Building Html Template "></div>
+                        alt="Logo"></div>
             </div>
         </div>
     </div>
@@ -124,7 +125,31 @@
     <script src="{{ asset("assets/js/contact.form.js") }}"></script>
     <!-- main js -->
     <script src="{{ asset("assets/js/main.js") }}"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    @if (Session::has('success'))
+        <script>
+            $(document).ready(function() {
+                toastr.options = {
+                    "progressBar": true,
+                    "positionClass": "toast-top-right"
+                }
+            });
+            toastr.success("{{ Session::get('success') }}");
+        </script>
+    @endif
+    @if (Session::has('errors'))
+        <script>
+            $(document).ready(function() {
+                toastr.options = {
+                    "progressBar": true,
+                    "positionClass": "toast-top-right"
+                }
+            });
+            toastr.error("{{ Session::get('errors') }}");
+        </script>
+    @endif
+    @yield("script")
 </body>
 
 </html>

@@ -1,14 +1,4 @@
-/**
-*
-* -----------------------------------------------------------------------------
-*
-* Template :  Konstruk - Construction & Building HTML Template
-  Author : devsdesign
-  Author URI : http://www.devsdesign.com/
-*
-* -----------------------------------------------------------------------------
-*
-**/
+
 (function($) {
 	"use strict";
     // sticky menu
@@ -31,7 +21,7 @@
         });
 
     });
-	
+
     //window load
    $(window).on( 'load', function() {
         $("#loading").delay(1500).fadeOut(500);
@@ -48,7 +38,7 @@
                $(".showhide").trigger("click");
            }
        });
-       
+
        if ($.fn.onePageNav) {
            $(".nav-menu").onePageNav({
                currentClass: "current-menu-item"
@@ -56,7 +46,7 @@
        }
     }
     var searchParent = $('.search-parent');
-    if(searchParent.length){ 
+    if(searchParent.length){
         $( ".search-parent" ).on( "click", function() {
           $( this).toggleClass( "open_add_class", 1000 );
         });
@@ -106,7 +96,7 @@
             // instead of a settings object
             ]
        });
-    }    
+    }
     // Slider Demo
     if ($('.slider-slide-2').length) {
         $('.slider-slide-2').slick({
@@ -151,7 +141,7 @@
             // instead of a settings object
             ]
        });
-    }   
+    }
 
     // Project
     if ($('.project-slide-1').length) {
@@ -204,7 +194,7 @@
             // instead of a settings object
             ]
        });
-    }  
+    }
 
     // Project
     if ($('.project-slide-2').length) {
@@ -223,7 +213,7 @@
                 slidesToShow: 2,
                 slidesToScroll: 2,
               }
-              }, 
+              },
               {
               breakpoint: 1199,
               settings: {
@@ -264,7 +254,7 @@
             // instead of a settings object
             ]
        });
-    } 
+    }
 
 
     // Slider
@@ -287,14 +277,14 @@
             autoplayHoverPause: false,
             responsiveClass: true
         });
-    } 
-   
-    // collapse hidden  
+    }
+
+    // collapse hidden
      var navMain = $(".navbar-collapse");
      navMain.on("click", "a:not([data-toggle])", null, function () {
          navMain.collapse('hide');
-     }); 
-    
+     });
+
 
    //Testimonials Slider
     if ($('.testi-slide-1').length) {
@@ -462,8 +452,8 @@
                 }
             });
         });
-    }   
-        
+    }
+
     // project Filter
     if ($('.gridFilter button').length) {
         var projectfiler = $('.gridFilter button');
@@ -475,7 +465,7 @@
             });
         }
     }
-    
+
     // magnificPopup init
     var imagepopup = $('.image-popup');
     if(imagepopup.length){
@@ -512,7 +502,7 @@
             }
         });
     }
-    
+
     //preloader
           $(window).on( 'load', function() {
               $("#pre-load").delay(600).fadeOut(500);
@@ -529,7 +519,7 @@
           }
       })
 
-      //Videos popup jQuery 
+      //Videos popup jQuery
       var popupvideos = $('.popup-videos');
             if(popupvideos.length){
             $('.popup-videos').magnificPopup({
@@ -539,10 +529,10 @@
             removalDelay: 160,
             preloader: false,
             fixedContentPos: false
-          }); 
+          });
       }
-       
-    
+
+
     /*-------------------------------------
         OwlCarousel
     -------------------------------------*/
@@ -616,18 +606,18 @@
         });
     });
 
-    // Skill bar 
+    // Skill bar
     var skillbar = $('.skillbar');
     if(skillbar.length) {
-        $('.skillbar').skillBars({  
-            from: 0,    
-            speed: 4000,    
-            interval: 100,  
-            decimals: 0,    
+        $('.skillbar').skillBars({
+            from: 0,
+            speed: 4000,
+            interval: 100,
+            decimals: 0,
         });
     }
 
-    // Rs Pic 
+    // Rs Pic
     var rs_pie = $('.rs-pie-content');
     if(rs_pie.length) {
         $('.rs-pie').easyPieChart({
@@ -640,15 +630,15 @@
             animate: 2000,
         });
     }
-		
+
     // Counter Up
     var counter = $('.rs-count');
-    if(counter.length) {  
+    if(counter.length) {
         $(".rs-count").counterUp({time:3000});
     }
-    
-    // scrollTop init	
-    var totop = $('#scrollUp');    
+
+    // scrollTop init
+    var totop = $('#scrollUp');
     win.on('scroll', function() {
         if (win.scrollTop() > 150) {
             totop.fadeIn();
@@ -675,7 +665,7 @@
         const tilt = $('.js-tilt').tilt();
     }
 
-	
+
 	/*----------------------------
     single-productjs active
     ------------------------------ */
@@ -711,7 +701,7 @@
                     slidesToShow: 2
                   }
                 }
-              ] 
+              ]
         });
     }
 
@@ -724,7 +714,7 @@
             $(this).removeClass('hash');
         }
     });
-    
+
     var servicesSelect = $('.services_select');
     if(servicesSelect.length){
    // Select Box Style
@@ -810,7 +800,7 @@
 
 
    /******** Mobile Menu Start ********/
-   
+
    $('.mobile-navbar-menu a').each(function(){
        var href = $(this).attr("href");
        if(href ="#"){
@@ -835,7 +825,7 @@
                $(this).toggleClass('submenu-opened');
                if ($(this).siblings('ul').hasClass('open-sub')) {
                    $(this).siblings('ul').removeClass('open-sub').hide('fadeIn');
-                   $(this).siblings('ul').hide('fadeIn');                                     
+                   $(this).siblings('ul').hide('fadeIn');
                }
                else {
                    $(this).siblings('ul').addClass('open-sub').hide('fadeIn');
@@ -851,7 +841,7 @@
            if ($( window ).width() > 991) {
                mobile_menu.find('ul').show('fadeIn');
                mobile_menu.find('ul.sub-menu').hide('fadeIn');
-           }          
+           }
        };
        resizeFix();
        return $(window).on('resize', resizeFix);

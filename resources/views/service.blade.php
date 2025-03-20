@@ -1,19 +1,22 @@
 @extends('layouts.app')
+@section('services')
+    current-menu-item
+@endsection
 @section('content')
     <!-- Breadcrumbs Start -->
     <div class="rs-breadcrumbs img2">
         <div class="container">
             <div class="breadcrumbs-inner">
                 <h1 class="page-title">
-                    Services - Style One
+                    Our Services
                 </h1>
-                <span class="sub-text">Excepteur sint occaecat cupidatat non proident, sunt in coulpa qui official<br>
-                    modeserunt mollit anim id est 20 years experience.</span>
+                <span class="sub-text">Contracting Nigeria Limited offers comprehensive services, including construction <br>
+                    infrastructure development, project management, and tailored contracting solutions.</span>
                 <ul class="breadcrumbs-area">
-                    <li title="Go to konstruk">
-                        <a class="active" href="index.html">Home</a>
+                    <li>
+                        <a class="active" href="/">Home</a>
                     </li>
-                    <li>Services Style 1</li>
+                    <li>Our Services</li>
                 </ul>
             </div>
         </div>
@@ -28,10 +31,10 @@
                     <div class="services-item">
                         <div class="serial-number"> 01</div>
                         <div class="services-icon">
-                            <img src="images/ser1.png" alt="Images">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
                         </div>
                         <div class="services-text">
-                            <h4 class="title"><a href="general-construction.html">General construction</a></h4>
+                            <h4 class="title"><a href="javascript:void(0);">Building Construction</a></h4>
                             <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
                                 Fusce luctus odio ac nibh luctus consulting placerat.</p>
                         </div>
@@ -41,10 +44,10 @@
                     <div class="services-item">
                         <div class="serial-number"> 02</div>
                         <div class="services-icon">
-                            <img src="images/ser2.png" alt="Images">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
                         </div>
                         <div class="services-text">
-                            <h4 class="title"><a href="general-construction.html">Property maintenance</a></h4>
+                            <h4 class="title"><a href="javascript:void(0);">Road Construction</a></h4>
                             <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
                                 Fusce luctus odio ac nibh luctus consulting placerat.</p>
                         </div>
@@ -54,23 +57,101 @@
                     <div class="services-item">
                         <div class="serial-number"> 03</div>
                         <div class="services-icon">
-                            <img src="images/ser3.png" alt="Images">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
                         </div>
                         <div class="services-text">
-                            <h4 class="title"><a href="general-construction.html">Project managment</a></h4>
+                            <h4 class="title"><a href="javascript:void(0);">Borehole Construction</a></h4>
                             <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
                                 Fusce luctus odio ac nibh luctus consulting placerat.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 md-mb-20">
+                <div class="col-xl-4 col-md-6 mb-20">
                     <div class="services-item">
                         <div class="serial-number"> 04</div>
                         <div class="services-icon">
-                            <img src="images/ser4.png" alt="Images">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
                         </div>
                         <div class="services-text">
-                            <h4 class="title"><a href="general-construction.html">Virtual design & build</a></h4>
+                            <h4 class="title"><a href="javascript:void(0);">Interior Design</a></h4>
+                            <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
+                                Fusce luctus odio ac nibh luctus consulting placerat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-20">
+                    <div class="services-item">
+                        <div class="serial-number"> 05</div>
+                        <div class="services-icon">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                        </div>
+                        <div class="services-text">
+                            <h4 class="title"><a href="javascript:void(0);">Flooring Design</a></h4>
+                            <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
+                                Fusce luctus odio ac nibh luctus consulting placerat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-20">
+                    <div class="services-item">
+                        <div class="serial-number"> 06</div>
+                        <div class="services-icon">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                        </div>
+                        <div class="services-text">
+                            <h4 class="title"><a href="javascript:void(0);">Drainage Construction</a></h4>
+                            <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
+                                Fusce luctus odio ac nibh luctus consulting placerat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-20">
+                    <div class="services-item">
+                        <div class="serial-number"> 07</div>
+                        <div class="services-icon">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                        </div>
+                        <div class="services-text">
+                            <h4 class="title"><a href="javascript:void(0);">Bridge Construction</a></h4>
+                            <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
+                                Fusce luctus odio ac nibh luctus consulting placerat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-20">
+                    <div class="services-item">
+                        <div class="serial-number"> 08</div>
+                        <div class="services-icon">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                        </div>
+                        <div class="services-text">
+                            <h4 class="title"><a href="javascript:void(0);">Roofing</a></h4>
+                            <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
+                                Fusce luctus odio ac nibh luctus consulting placerat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-20">
+                    <div class="services-item">
+                        <div class="serial-number"> 09</div>
+                        <div class="services-icon">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                        </div>
+                        <div class="services-text">
+                            <h4 class="title"><a href="javascript:void(0);">Plumbing</a></h4>
+                            <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
+                                Fusce luctus odio ac nibh luctus consulting placerat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mb-20">
+                    <div class="services-item">
+                        <div class="serial-number"> 10</div>
+                        <div class="services-icon">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                        </div>
+                        <div class="services-text">
+                            <h4 class="title"><a href="javascript:void(0);">Renovation</a></h4>
                             <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
                                 Fusce luctus odio ac nibh luctus consulting placerat.</p>
                         </div>
@@ -78,12 +159,12 @@
                 </div>
                 <div class="col-xl-4 col-md-6 sm-mb-20">
                     <div class="services-item">
-                        <div class="serial-number"> 05</div>
+                        <div class="serial-number"> 11</div>
                         <div class="services-icon">
-                            <img src="images/ser5.png" alt="Images">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
                         </div>
                         <div class="services-text">
-                            <h4 class="title"><a href="general-construction.html">Preconstruction</a></h4>
+                            <h4 class="title"><a href="javascript:void(0);">Real Estate Development</a></h4>
                             <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
                                 Fusce luctus odio ac nibh luctus consulting placerat.</p>
                         </div>
@@ -91,12 +172,12 @@
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="services-item">
-                        <div class="serial-number"> 06</div>
+                        <div class="serial-number"> 12</div>
                         <div class="services-icon">
-                            <img src="images/ser6.png" alt="Images">
+                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
                         </div>
                         <div class="services-text">
-                            <h4 class="title"><a href="general-construction.html">Design build</a></h4>
+                            <h4 class="title"><a href="javascript:void(0);">General Supplies & Related Logistics</a></h4>
                             <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
                                 Fusce luctus odio ac nibh luctus consulting placerat.</p>
                         </div>
@@ -121,7 +202,7 @@
                 </div>
                 <div class="col-lg-4 text-right md-left md-mb-40">
                     <div class="btn-part mt-20">
-                        <a class="readon more touch" href="contact.html">Get In Touch</a>
+                        <a class="readon more touch" href="/contact-us">Get In Touch</a>
                     </div>
                 </div>
             </div>
@@ -132,7 +213,7 @@
                     <div class="col-xl-3 col-md-6 md-40">
                         <div class="process-item process-gap">
                             <div class="number-image">
-                                <img src="images/p1.png" alt="Images">
+                                <img src="{{ asset("assets/images/building-3-fill.svg") }}" alt="Images">
                             </div>
                             <div class="number-text">
                                 <div class="number-area">
@@ -147,7 +228,7 @@
                     <div class="col-xl-3 col-md-6 md-40">
                         <div class="process-item process-gap">
                             <div class="number-image">
-                                <img src="images/p2.png" alt="Images">
+                                <img src="{{ asset('assets/images/brush-2-fill.svg') }}" alt="Images">
                             </div>
                             <div class="number-text">
                                 <div class="number-area">
@@ -162,7 +243,7 @@
                     <div class="col-xl-3 col-md-6 sm-mb-40">
                         <div class="process-item">
                             <div class="number-image">
-                                <img src="images/p3.png" alt="Images">
+                                <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                             </div>
                             <div class="number-text">
                                 <div class="number-area">
@@ -177,7 +258,7 @@
                     <div class="col-xl-3 col-md-6">
                         <div class="process-item">
                             <div class="number-image">
-                                <img src="images/p4.png" alt="Images">
+                                <img src="{{ asset('assets/images/dropbox-fill.svg') }}" alt="Images">
                             </div>
                             <div class="number-text">
                                 <div class="number-area">
@@ -207,31 +288,32 @@
             <div class="row y-middle">
                 <div class="col-lg-6 md-mb-50">
                     <div class="project-img">
-                        <img src="images/ser-con1.jpg" alt="Contact">
+                        <img src="{{ asset('assets/images/ser-con1.jpg') }}" alt="Contact">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-section">
                         <div class="contact-wrap">
                             <div id="form-messages"></div>
-                            <form id="contact-form" method="post" action="mailer.php">
+                            <form method="post" action="{{ route('contact') }}">
+                                @csrf
                                 <fieldset>
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
                                             <input class="from-control" type="text" id="name" name="name"
-                                                placeholder="Name" required="">
+                                                placeholder="Your Name" required="">
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
                                             <input class="from-control" type="text" id="email" name="email"
-                                                placeholder="E-Mail" required="">
+                                                placeholder="Your E-Mail Address" required="">
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
                                             <input class="from-control" type="text" id="phone" name="phone"
-                                                placeholder="Phone Number" required="">
+                                                placeholder="Your Phone Number" required="">
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                            <input class="from-control" type="text" id="website" name="website"
-                                                placeholder="Your Website" required="">
+                                            <input class="from-control" type="text" id="subject" name="subject"
+                                                placeholder="Your Subject" required="">
                                         </div>
                                         <div class="col-lg-12 mb-30">
                                             <textarea class="from-control" id="message" name="message" placeholder="Your Message Here" required=""></textarea>
@@ -251,52 +333,41 @@
             <!-- Contact Section End -->
             <div class="rs-contact contact-style5 pt-120 md-pt-80">
                 <div class="row">
-                    <div class="col-xl-3 col-sm-6 sm-mb-30">
+                    <div class="col-xl-4 col-sm-4 sm-mb-30">
                         <div class="contact-box">
                             <div class="contact-icon">
-                                <img src="images/1.png" alt="images">
+                                <img src="{{ asset('assets/images/map-pin-line.svg') }}" alt="images">
                             </div>
                             <div class="content-text">
-                                <h4 class="title"><a href="#">USA office</a></h4>
-                                <p class="services-txt">55 Gerad Lane,<br> NY 11201, USA</p>
+                                <h4 class="title"><a href="#">Office address</a></h4>
+                                <p class="services-txt">{{ env('SITE_ADDRESS') }}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6 sm-mb-30">
+                    <div class="col-xl-4 col-sm-4 xs-mb-30">
                         <div class="contact-box">
                             <div class="contact-icon">
-                                <img src="images/4.png" alt="images">
-                            </div>
-                            <div class="content-text">
-                                <h4 class="title"><a href="#">BD office</a></h4>
-                                <p class="services-txt">Ta-134/A, Link<br>Road, Gulshan-1</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 xs-mb-30">
-                        <div class="contact-box">
-                            <div class="contact-icon">
-                                <img src="images/2.png" alt="images">
+                                <img src="{{ asset('assets/images/mail-send-fill.svg') }}" alt="images">
                             </div>
                             <div class="content-text">
                                 <h4 class="title"><a href="#">Email us</a></h4>
                                 <p class="services-txt">
-                                    <a href="mailto:test@gamil.com">test@gamil.com</a><br>
-                                    <a href="mailto:test2@gamil.com">test2@gamil.com</a>
+                                    {{-- <a href="mailto:test@gamil.com">test@gamil.com</a><br> --}}
+                                    <a href="mailto:{{ env('SITE_EMAIL') }}">{{ env('SITE_EMAIL') }}</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6">
+                    <div class="col-xl-4 col-sm-4">
                         <div class="contact-box">
                             <div class="contact-icon">
-                                <img src="images/3.png" alt="images">
+                                <img src="{{ asset('assets/images/phone-fill.svg') }}" alt="images">
                             </div>
                             <div class="content-text">
-                                <h4 class="title"><a href="#">Call us</a></h4>
+                                <h4 class="title"><a href="#">Forn enquires</a></h4>
                                 <p class="services-txt">
-                                    <a href="tel:(+088)589-8745">(+088) 589-8745</a><br>
-                                    <a href="tel:(+088)222-9999">(+088) 222-9999</a>
+                                    <a href="tel:{{ env('SITE_PHONE1') }}">{{ env('SITE_PHONE1') }}</a><br>
+                                    <a href="tel:{{ env('SITE_PHONE2') }}">{{ env('SITE_PHONE2') }}</a>
                                 </p>
                             </div>
                         </div>
@@ -309,61 +380,6 @@
     <!-- Contact Section End -->
 
     <!-- Partner Start -->
-    <div class="rs-partner partner-main-home partner-modify8">
-        <div class="container">
-            <div class="partner-content-widget">
-                <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="30"
-                    data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
-                    data-dots="false" data-nav="false" data-nav-speed="false" data-md-device="5"
-                    data-md-device-nav="false" data-md-device-dots="false" data-center-mode="false"
-                    data-ipad-device2="4" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
-                    data-ipad-device="4" data-ipad-device-nav="false" data-ipad-device-dots="false"
-                    data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false">
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/1_1.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/1_1.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/2_1.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/2_1.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/3_1.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/3_1.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/4_1.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/4_1.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/5.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/5.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/6.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/6.png" title="" alt="">
-                        </a>
-                    </div>
-                    <div class="logo-img">
-                        <a href="https://devsdesign.net">
-                            <img class="hovers-logos rs-grid-img" src="images/7.png" title="" alt="">
-                            <img class="mains-logos rs-grid-img " src="images/7.png" title="" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('includes.partner')
     <!-- Partner End -->
 @endsection
