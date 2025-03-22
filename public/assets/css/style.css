@@ -7626,12 +7626,12 @@ body .search-modal .close:hover {
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  color: #F1EAEA;
+  /* color: #F1EAEA; */
   font-family: "Roboto", Sans-serif;
   margin: 0 0 10px;
 }
 .rs-process.process-style3 .process-bg .process-item .number-text .number-txt {
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
   margin-bottom: 0;
 }
 /* ------------------------------------

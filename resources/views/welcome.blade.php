@@ -66,37 +66,34 @@
                 <div class="col-lg-6 pl-40 md-pl-15 pr-50 md-pr-15">
                     <div class="sec-title">
                         <span class="sub-text sub-text2">
-                            About Us
+                            What Sets Us Apart
                         </span>
                         <h2 class="title pb-20">
-                            We build your dreams.
+                            We do more than just construct buildings
                         </h2>
                         <p class="desc pb-20">
-                            We bring your vision to life with precision and passion. Every project we undertake is more than
-                            just construction.
+                            At Fuhrend Contracting Nigeria Limited, we do more than just construct buildings, sell real estate, or provide logistics services.
                         </p>
                         <h4 class="small-title pb-15">
-                            With expertise, innovation, and dedication <br> we turn your aspirations into lasting realities.
-                            Let's build your dreams together.
+                            We are committed to serving our clients, communities, and the environment through innovative solutions and a customer-focused approach.
                         </h4>
                         <div class="row">
                             <div class="col-lg-5 col-md-5">
                                 <ul class="check-lists2">
-                                    <li>Dream Builders</li>
-                                    <li>Precision Built</li>
-                                    <li>Innovating Excellence</li>
+                                    <li>Hard Work - Committed to excellence and efficiency</li>
+                                    <li>Accountability - Ensuring transparency and integrity in all dealings</li>
                                 </ul>
                             </div>
                             <div class="col-lg-5 col-md-5">
                                 <ul class="check-lists2">
-                                    <li>Trusted Quality</li>
-                                    <li>Future Focused</li>
-                                    <li>Legacy Makers</li>
+                                    <li>Teamwork - Collaborating to achieve outstanding results</li>
+                                    <li>Professionalism - Maintaining high standards in service delivery</li>
+                                    <li>Honesty - Building trust through ethical business practices</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="btn-part mt-28">
-                            <a class="readon more know" href="/about-us">Know more</a>
+                            <a class="readon more know" href="/about-us">About us</a>
                         </div>
                     </div>
                 </div>
