@@ -31,7 +31,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 01</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Building Construction</a></h4>
@@ -44,7 +44,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 02</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Road Construction</a></h4>
@@ -57,7 +57,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 03</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Borehole Construction</a></h4>
@@ -70,7 +70,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 04</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Interior Design</a></h4>
@@ -83,7 +83,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 05</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Flooring Design</a></h4>
@@ -96,7 +96,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 06</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Drainage Construction</a></h4>
@@ -109,7 +109,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 07</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Bridge Construction</a></h4>
@@ -122,7 +122,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 08</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Roofing</a></h4>
@@ -135,7 +135,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 09</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Plumbing</a></h4>
@@ -148,7 +148,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 10</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Renovation</a></h4>
@@ -161,12 +161,13 @@
                     <div class="services-item">
                         <div class="serial-number"> 11</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">Real Estate Development</a></h4>
-                            <p class="services-txt"> Quisque placerat vitae odio lacus uten scelerisque.
-                                Fusce luctus odio ac nibh luctus consulting placerat.</p>
+                            <p class="services-txt">We assist clients in buying and selling properties, ensuring they
+                                secure the best deals. Our team provides expert guidance in marketing and purchasing
+                                properties at the right price under optimal terms.</p>
                         </div>
                     </div>
                 </div>
@@ -174,7 +175,7 @@
                     <div class="services-item">
                         <div class="serial-number"> 12</div>
                         <div class="services-icon">
-                            <img src="{{ asset("assets/images/building-2-fill.svg") }}" alt="Images">
+                            <img src="{{ asset('assets/images/building-2-fill.svg') }}" alt="Images">
                         </div>
                         <div class="services-text">
                             <h4 class="title"><a href="javascript:void(0);">General Supplies & Related Logistics</a></h4>
@@ -194,7 +195,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="sec-title mb-70 md-mb-15">
-                        <h2 class="title title4 ser-style1">
+                        <h2 class="title ser-style1">
                             Our working process - how we<br>
                             work for our customers
                         </h2>
@@ -213,7 +214,7 @@
                     <div class="col-xl-3 col-md-6 md-40">
                         <div class="process-item process-gap">
                             <div class="number-image">
-                                <img src="{{ asset("assets/images/building-3-fill.svg") }}" alt="Images">
+                                <img src="{{ asset('assets/images/building-3-fill.svg') }}" alt="Images">
                             </div>
                             <div class="number-text">
                                 <div class="number-area">

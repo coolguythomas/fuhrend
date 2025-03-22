@@ -11,12 +11,12 @@
                     About Us
                 </h1>
                 <span class="sub-text">We are dedicated to innovative construction, delivering quality, <br>
-                     building trust, and shaping Nigeria's future with excellence.</span>
+                    building trust, and shaping Nigeria's future with excellence.</span>
                 <ul class="breadcrumbs-area">
                     <li>
                         <a class="active" href="/">Home</a>
                     </li>
-                    <li>About</li>
+                    <li>About Us</li>
                 </ul>
             </div>
         </div>
@@ -29,27 +29,30 @@
             <div class="row y-middle">
                 <div class="col-lg-6 md-mb-50">
                     <div class="images-part">
-                        <img src="{{ asset("assets/images/about.png") }}" alt="About">
+                        <img src="{{ asset('assets/images/about.png') }}" alt="About">
                     </div>
                 </div>
                 <div class="col-lg-6 pl-50 md-pl-15">
                     <div class="sec-title">
                         <span class="sub-text">
-                            <img width="24" height="24" src="{{ asset("assets/images/instance-fill.svg") }}" alt="Images">
-                            Who We Are
+                            <img width="24" height="24" src="{{ asset('assets/images/instance-fill.svg') }}"
+                                alt="Images">
+                            What Sets Us Apart
                         </span>
                         <h2 class="title pb-20">
-                            Construction solutions focused future ready
+                            Our Mission & Our Vision
                         </h2>
                         <p class="desc pb-37">
-                            Leverage agile frameworks to provide a robust synopsis for high
-                            level overviews. Iterative approaches to corporate strategy data
-                            foster to collaborative thinking to empowerment.
+                            We strive to turn the dream of homeownership into reality for everyone. Real estate ownership
+                            offers security, safety, and financial growth, and we continuously innovate to help families and
+                            individuals invest wisely in property.
+                            We are dedicated to excelling in our industry while helping our customers build wealth. Our team
+                            is passionate about hard work and giving back to communities in impactful ways.
                         </p>
                         <div class="row y-middle">
                             <div class="col-lg-4 col-md-4 sm-mb-30">
                                 <div class="about-img">
-                                    <img src="{{ asset("assets/images/abzt.jpg") }}" alt="About">
+                                    <img src="{{ asset('assets/images/abzt.jpg') }}" alt="About">
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-8">
@@ -58,19 +61,55 @@
                                         <span class="icon-list-icon">
                                             <i class="fa fa-check-circle"></i>
                                         </span>
-                                        <span class="list-text">Pre-construction services</span>
+                                        <span class="list-text">Project planning, budgeting, and scheduling</span>
                                     </li>
                                     <li class="list-item">
                                         <span class="icon-list-icon">
                                             <i class="fa fa-check-circle"></i>
                                         </span>
-                                        <span class="list-text">Industrial manufacturing</span>
+                                        <span class="list-text">Workforce management, including subcontractors</span>
                                     </li>
                                     <li class="list-item">
                                         <span class="icon-list-icon">
                                             <i class="fa fa-check-circle"></i>
                                         </span>
-                                        <span class="list-text">Building and construction</span>
+                                        <span class="list-text">Material sourcing and procurement</span>
+                                    </li>
+                                    <li class="list-item">
+                                        <span class="icon-list-icon">
+                                            <i class="fa fa-check-circle"></i>
+                                        </span>
+                                        <span class="list-text">Building permit applications</span>
+                                    </li>
+                                    <li class="list-item">
+                                        <span class="icon-list-icon">
+                                            <i class="fa fa-check-circle"></i>
+                                        </span>
+                                        <span class="list-text">Site security and facility management</span>
+                                    </li>
+                                    <li class="list-item">
+                                        <span class="icon-list-icon">
+                                            <i class="fa fa-check-circle"></i>
+                                        </span>
+                                        <span class="list-text">Waste management and disposal</span>
+                                    </li>
+                                    <li class="list-item">
+                                        <span class="icon-list-icon">
+                                            <i class="fa fa-check-circle"></i>
+                                        </span>
+                                        <span class="list-text">On-site personnel supervision</span>
+                                    </li>
+                                    <li class="list-item">
+                                        <span class="icon-list-icon">
+                                            <i class="fa fa-check-circle"></i>
+                                        </span>
+                                        <span class="list-text">Site surveying and engineering</span>
+                                    </li>
+                                    <li class="list-item">
+                                        <span class="icon-list-icon">
+                                            <i class="fa fa-check-circle"></i>
+                                        </span>
+                                        <span class="list-text">Project monitoring and compliance</span>
                                     </li>
                                 </ul>
                             </div>
@@ -83,7 +122,7 @@
                             </div>
                             <div class="col-lg-6 col-md-8">
                                 <div class="signeture-img">
-                                    <img src="{{ asset("assets/images/signeture1.png") }}" alt="Images">
+                                    <img src="{{ asset('assets/images/signeture1.png') }}" alt="Images">
                                 </div>
                             </div>
                         </div>
@@ -106,7 +145,7 @@
                     <div class="contact-wrap">
                         <div class="sec-title mb-45">
                             <span class="sub-text">
-                                <img src="{{ asset("assets/images/bubble-chart-fill.png") }}" alt="Images">
+                                <img src="{{ asset('assets/images/bubble-chart-fill.png') }}" alt="Images">
                                 Lets talk
                             </span>
                             <h2 class="title">
@@ -114,7 +153,7 @@
                             </h2>
                         </div>
                         <div id="form-messages"></div>
-                        <form method="post" action="{{ route("contact") }}">
+                        <form method="post" action="{{ route('contact') }}">
                             @csrf
                             <fieldset>
                                 <div class="row">
@@ -131,8 +170,8 @@
                                             placeholder="Your Phone Number" required="">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-                                        <input class="from-control" type="text" name="subject"
-                                            placeholder="Your Subject" required="">
+                                        <input class="from-control" type="text" name="subject" placeholder="Your Subject"
+                                            required="">
                                     </div>
                                     <div class="col-lg-12 mb-30">
                                         <textarea class="from-control" id="message" name="message" placeholder="Your Message Here" required=""></textarea>
@@ -152,34 +191,34 @@
                 <div class="contact-box-item">
                     <div class="contact-box mb-20">
                         <div class="contact-icon">
-                            <img src="{{ asset("assets/images/map-pin-line.svg") }}" alt="images">
+                            <img src="{{ asset('assets/images/map-pin-line.svg') }}" alt="images">
                         </div>
                         <div class="content-text">
                             <h4 class="title"><a href="#">Office address</a></h4>
-                            <p class="services-txt">{{ env("SITE_ADDRESS") }}</p>
+                            <p class="services-txt">{{ env('SITE_ADDRESS') }}</p>
                         </div>
                     </div>
                     <div class="contact-box mb-20">
                         <div class="contact-icon">
-                            <img src="{{ asset("assets/images/mail-send-fill.svg") }}" alt="images">
+                            <img src="{{ asset('assets/images/mail-send-fill.svg') }}" alt="images">
                         </div>
                         <div class="content-text">
                             <h4 class="title"><a href="#">Email us</a></h4>
                             <p class="services-txt">
                                 {{-- <a href="mailto:test@gamil.com">test@gamil.com</a><br> --}}
-                                <a href="mailto:{{ env("SITE_EMAIL") }}">{{ env("SITE_EMAIL") }}</a>
+                                <a href="mailto:{{ env('SITE_EMAIL') }}">{{ env('SITE_EMAIL') }}</a>
                             </p>
                         </div>
                     </div>
                     <div class="contact-box">
                         <div class="contact-icon">
-                            <img src="{{ asset("assets/images/phone-fill.svg") }}" alt="images">
+                            <img src="{{ asset('assets/images/phone-fill.svg') }}" alt="images">
                         </div>
                         <div class="content-text">
                             <h4 class="title"><a href="#">Call us</a></h4>
                             <p class="services-txt">
-                                <a href="tel:{{ env("SITE_PHONE1") }}">{{ env("SITE_PHONE1") }}</a><br>
-                                <a href="tel:{{ env("SITE_PHONE2") }}">{{ env("SITE_PHONE2") }}</a>
+                                <a href="tel:{{ env('SITE_PHONE1') }}">{{ env('SITE_PHONE1') }}</a><br>
+                                <a href="tel:{{ env('SITE_PHONE2') }}">{{ env('SITE_PHONE2') }}</a>
                             </p>
                         </div>
                     </div>
@@ -202,7 +241,8 @@
                         Join Our Trusted Team!
                     </h2>
                     <p class="desc desc3 pb-35">
-                        Together, we deliver excellence through innovation, <br> quality craftsmanship, and unwavering commitment to success.
+                        Together, we deliver excellence through innovation, <br> quality craftsmanship, and unwavering
+                        commitment to success.
                     </p>
                     <div class="btn-part">
                         <a class="readon more contact" href="/contact-us">Work with us</a>
